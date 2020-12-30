@@ -30,7 +30,7 @@ jobs:
     steps:
       - checkout
       - run: npm i
-      - run: npm run tests
+      - run: npm run test
 
   analyze:
     docker:
