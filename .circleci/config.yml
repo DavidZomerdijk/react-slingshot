@@ -9,10 +9,10 @@ workflows:
     jobs:
       - build
       - test:
-        require:
+        requires:
           build
       - analyze:
-        require:
+        requires:
           test
 
 jobs:
