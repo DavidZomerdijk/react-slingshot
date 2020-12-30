@@ -15,7 +15,6 @@ workflows:
         require:
           test
 
-
 jobs:
   build:
     docker:
@@ -40,6 +39,3 @@ jobs:
       - checkout
       - run: npm i
       - run: npm run audit
-
-  jobs:
-    - welcome/run
