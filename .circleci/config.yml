@@ -27,7 +27,7 @@ jobs:
             command: |
               aws cloudformation deploy \
                 --template-file template.yml \
-                --stack-name new_stack
+                --stack-name newstack
   build:
     docker:
       - image: circleci/node:13.8.0
