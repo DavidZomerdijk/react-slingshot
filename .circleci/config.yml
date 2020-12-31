@@ -14,7 +14,8 @@ jobs:
             apk add --update ansible # install the dependencies needed for your playbook -yes
       - run:
           name: Configure server
-          command: | echo yes |
+          command: |
+            echo yes |
             ansible-playbook -i inventory.txt playbook.yml
 
 workflows:
