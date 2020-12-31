@@ -17,17 +17,17 @@ workflows:
       #       - test
 
 jobs:
-  create_infrastucture:
-    docker:
-      -image: amazon/aws-cli
-    steps:
-      - checkout
-      - run:
-          name: Ensure backend infrastructure exist
-          command: |
-            aws cloudformation deploy \
-              --template-file template.yml \
-              --stack-name my-stack
+  create_infrastructure:
+      docker:
+        - image: amazon/aws-cli
+      steps:
+        - checkout
+        - run:
+            name: Ensure backend infrastructure exist
+            command: |
+              aws cloudformation deploy \
+                --template-file template.yml \
+                --stack-name my-stack
   build:
     docker:
       - image: circleci/node:13.8.0
