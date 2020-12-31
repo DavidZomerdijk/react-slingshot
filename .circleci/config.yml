@@ -17,7 +17,7 @@ workflows:
       #       - test
 
 jobs:
-  create_infrastructure:
+  create_infrastucture:
       docker:
         - image: amazon/aws-cli
       steps:
