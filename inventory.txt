@@ -1,2 +1,2 @@
 [all]
-ec2-3-19-73-228.us-east-2.compute.amazonaws.com
+ubuntu@ec2-3-19-73-228.us-east-2.compute.amazonaws.com
