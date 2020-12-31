@@ -26,7 +26,8 @@ jobs:
             name: Ensure backend infrastructure exist
             command: |
               aws cloudformation deploy \
-                --template-file template.yml 
+                --template-file template.yml \
+                --stack-name new_stack
   build:
     docker:
       - image: circleci/node:13.8.0
