@@ -7,7 +7,7 @@ workflows:
   # Name the workflow "welcome"
   devops_training:
     jobs:
-      - build
+      # - build
       - create_infrastucture
       # - test:
       #     requires:
