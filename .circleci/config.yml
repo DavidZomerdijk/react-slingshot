@@ -11,10 +11,10 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            apk add --update ansible # install the dependencies needed for your playbook
+            apk add --update ansible # install the dependencies needed for your playbook -yes
       - run:
           name: Configure server
-          command: |
+          command: | echo yes |
             ansible-playbook -i inventory.txt playbook.yml
 
 workflows:
